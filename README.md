@@ -1,5 +1,10 @@
 # NPM Package Boilerplate
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/undirectlookable/npm-package-boilerplate.svg)
+![GitHub](https://img.shields.io/github/license/undirectlookable/npm-package-boilerplate.svg)
+![GitHub issues](https://img.shields.io/github/issues/undirectlookable/npm-package-boilerplate.svg)
+[![Build Status](https://travis-ci.org/undirectlookable/npm-package-boilerplate.svg?branch=master)](https://travis-ci.org/undirectlookable/npm-package-boilerplate)
+
 ## Usage
 
 ```bash
