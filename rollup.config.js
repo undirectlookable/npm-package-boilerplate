@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 const path = require('path')
 
@@ -16,9 +17,12 @@ export default (async () => ({
   },
   plugins: [
     resolve(),
+    commonjs(),
     babel({
       exclude: 'node_modules/**' // only transpile our source code
     }),
     isProduction && (await import('rollup-plugin-terser')).terser()
-  ]
+  ],
+  external: []
 }))()
+
